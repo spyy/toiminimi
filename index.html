@@ -1,370 +1,49 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex Rivera | Jack of All Trades</title>
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            50: '#f0fdf4',
-                            100: '#dcfce7',
-                            500: '#22c55e',
-                            600: '#16a34a',
-                            700: '#15803d',
-                            900: '#14532d',
-                        },
-                        dark: {
-                            800: '#1e293b',
-                            900: '#0f172a',
-                            950: '#020617',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        /* Custom scrollbar for horizontal category filter */
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-    </style>
 </head>
-<body class="bg-dark-950 text-slate-100 font-sans antialiased pb-20 md:pb-0">
+<body class="bg-gray-900 text-gray-100 font-sans antialiased max-w-xl mx-auto px-4 py-8 pb-20">
 
-    <!-- Top Navigation Header -->
-    <header class="sticky top-0 z-40 bg-dark-900/80 backdrop-blur-md border-b border-slate-800">
-        <div class="max-w-4xl mx-auto px-4 py-3.5 flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <div class="w-9 h-9 rounded-full bg-brand-500/20 text-brand-500 flex items-center justify-center font-bold text-lg border border-brand-500/30">
-                    AR
-                </div>
-                <div>
-                    <span class="font-bold text-base block leading-none">Alex Rivera</span>
-                    <span class="text-xs text-slate-400">Multi-Disciplinary Specialist</span>
-                </div>
-            </div>
-            <a href="#contact" class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold rounded-full bg-brand-500 text-dark-950 hover:bg-brand-600 transition">
-                <i data-lucide="send" class="w-3.5 h-3.5"></i> Let's Talk
-            </a>
-        </div>
+    <!-- Header -->
+    <header class="text-center space-y-2 mb-8">
+        <div class="w-16 h-16 rounded-full bg-emerald-500 text-gray-950 font-bold text-2xl mx-auto flex items-center justify-center">AR</div>
+        <h1 class="text-2xl font-bold">Alex Rivera</h1>
+        <p class="text-xs text-gray-400">Digital • Creative • Mechanical • IT</p>
     </header>
 
-    <!-- Main Container -->
-    <main class="max-w-4xl mx-auto px-4 py-6 space-y-12">
-
-        <!-- Hero Section -->
-        <section class="text-center pt-4 pb-2 space-y-4">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 text-brand-500 border border-slate-700 text-xs font-medium">
-                <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span> Available for Hire & Projects
+    <!-- Capabilities -->
+    <section class="space-y-4 mb-8">
+        <h2 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Services</h2>
+        <div class="grid grid-cols-1 gap-3">
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <h3 class="font-bold text-sm text-emerald-400">Digital & Code</h3>
+                <p class="text-xs text-gray-300 mt-1">Websites, app interfaces, custom scripts, automation.</p>
             </div>
-            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">
-                One Resource. <br/>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-emerald-300">Endless Solutions.</span>
-            </h1>
-            <p class="text-slate-400 text-sm sm:text-base max-w-lg mx-auto leading-relaxed">
-                Bridging technical expertise, creative execution, and practical craft to build, repair, and launch your vision.
-            </p>
-            <div class="pt-2 flex flex-col sm:flex-row gap-3 justify-center items-stretch sm:items-center">
-                <a href="#skills" class="px-6 py-3 rounded-xl bg-brand-500 text-dark-950 font-bold text-sm shadow-lg shadow-brand-500/20 hover:bg-brand-600 transition text-center flex items-center justify-center gap-2">
-                    <i data-lucide="grid" class="w-4 h-4"></i> Explore Capabilities
-                </a>
-                <a href="#contact" class="px-6 py-3 rounded-xl bg-slate-800 border border-slate-700 text-slate-200 font-bold text-sm hover:bg-slate-700 transition text-center flex items-center justify-center gap-2">
-                    <i data-lucide="message-square" class="w-4 h-4"></i> Get in Touch
-                </a>
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <h3 class="font-bold text-sm text-emerald-400">Design & Media</h3>
+                <p class="text-xs text-gray-300 mt-1">Branding, UI design, graphics, basic video editing.</p>
             </div>
-        </section>
-
-        <!-- Quick Stats Grid -->
-        <section class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl text-center">
-                <div class="text-2xl font-black text-brand-500">8+</div>
-                <div class="text-xs text-slate-400 mt-0.5">Core Disciplines</div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <h3 class="font-bold text-sm text-emerald-400">Trades & Assembly</h3>
+                <p class="text-xs text-gray-300 mt-1">Custom woodwork, repairs, installations, hardware builds.</p>
             </div>
-            <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl text-center">
-                <div class="text-2xl font-black text-brand-500">120+</div>
-                <div class="text-xs text-slate-400 mt-0.5">Projects Delivered</div>
-            </div>
-            <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl text-center">
-                <div class="text-2xl font-black text-brand-500">100%</div>
-                <div class="text-xs text-slate-400 mt-0.5">Adaptability</div>
-            </div>
-            <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl text-center">
-                <div class="text-2xl font-black text-brand-500">24h</div>
-                <div class="text-xs text-slate-400 mt-0.5">Response Time</div>
-            </div>
-        </section>
-
-        <!-- Dynamic Skills Grid -->
-        <section id="skills" class="space-y-6">
-            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
-                <div>
-                    <h2 class="text-2xl font-bold">Capabilities & Expertise</h2>
-                    <p class="text-xs text-slate-400">Filter skills by category to see what I bring to the table</p>
-                </div>
-
-                <!-- Category Filter Buttons -->
-                <div class="flex gap-1.5 overflow-x-auto no-scrollbar py-1">
-                    <button onclick="filterSkills('all')" class="skill-btn active-btn px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap bg-brand-500 text-dark-950">
-                        All Skills
-                    </button>
-                    <button onclick="filterSkills('tech')" class="skill-btn px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap bg-slate-800 text-slate-300 hover:bg-slate-700">
-                        Digital & Code
-                    </button>
-                    <button onclick="filterSkills('creative')" class="skill-btn px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap bg-slate-800 text-slate-300 hover:bg-slate-700">
-                        Design & Media
-                    </button>
-                    <button onclick="filterSkills('practical')" class="skill-btn px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap bg-slate-800 text-slate-300 hover:bg-slate-700">
-                        Trades & Build
-                    </button>
-                </div>
-            </div>
-
-            <!-- Cards Container -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="skills-grid">
-                <!-- Digital & Code -->
-                <div class="skill-card tech bg-slate-900 border border-slate-800 rounded-2xl p-5 hover:border-slate-700 transition">
-                    <div class="flex items-center gap-3 mb-3">
-                        <div class="p-2.5 rounded-xl bg-blue-500/10 text-blue-400 border border-blue-500/20">
-                            <i data-lucide="code-2" class="w-5 h-5"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-base">Full-Stack Web Dev</h3>
-                            <span class="text-xs text-slate-400">Digital & Code</span>
-                        </div>
-                    </div>
-                    <p class="text-xs text-slate-300 leading-relaxed mb-4">
-                        Custom frontend development, API integrations, lightweight database architecture, and responsive UI optimization.
-                    </p>
-                    <div class="flex flex-wrap gap-1.5">
-                        <span class="px-2 py-1 bg-slate-800 text-slate-300 rounded text-[10px] font-medium">JavaScript</span>
-                        <span class="px-2 py-1 bg-slate-800 text-slate-300 rounded text-[10px] font-medium">Tailwind CSS</span>
-                        <span class="px-2 py-1 bg-slate-800 text-slate-300 rounded text-[10px] font-medium">React</span>
-                        <span class="px-2 py-1 bg-slate-800 text-slate-300 rounded text-[10px] font-medium">Node.js</span>
-                    </div>
-                </div>
-
-                <!-- Design & Media -->
-                <div class="skill-card creative bg-slate-900 border border-slate-800 rounded-2xl p-5 hover:border-slate-700 transition">
-                    <div class="flex items-center gap-3 mb-3">
-                        <div class="p-2.5 rounded-xl bg-purple-500/10 text-purple-400 border border-purple-500/20">
-                            <i data-lucide="palette" class="w-5 h-5"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-base">Branding & Media Design</h3>
-                            <span class="text-xs text-slate-400">Design & Media</span>
-                        </div>
-                    </div>
-                    <p class="text-xs text-slate-300 leading-relaxed mb-4">
-                        Logo systems, visual identities, promotional material, graphic mockups, and video editing for social channels.
-                    </p>
-                    <div class="flex flex-wrap gap-1.5">
-                        <span class="px-2 py-1 bg-slate-800 text-slate-300 rounded text-[10px] font-medium">Figma</span>
-                        <span class="px-2 py-1 bg-slate-800 text-slate-300 rounded text-[10px] font-medium">Photoshop</span>
-                        <span class="px-2 py-1 bg-slate-800 text-slate-300 rounded text-[10px] font-medium">Premiere</span>
-                        <span class="px-2 py-1 bg-slate-800 text-slate-300 rounded text-[10px] font-medium">UI/UX</span>
-                    </div>
-                </div>
-
-                <!-- Trades & Build -->
-                <div class="skill-card practical bg-slate-900 border border-slate-800 rounded-2xl p-5 hover:border-slate-700 transition">
-                    <div class="flex items-center gap-3 mb-3">
-                        <div class="p-2.5 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/20">
-                            <i data-lucide="wrench" class="w-5 h-5"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-base">Custom Carpentry & Repairs</h3>
-                            <span class="text-xs text-slate-400">Trades & Build</span>
-                        </div>
-                    </div>
-                    <p class="text-xs text-slate-300 leading-relaxed mb-4">
-                        Custom furniture fabrication, interior accent walls, home maintenance, fixture installations, and repairs.
-                    </p>
-                    <div class="flex flex-wrap gap-1.5">
-                        <span class="px-2 py-1 bg-slate-800 text-slate-300 rounded text-[10px] font-medium">Woodworking</span>
-                        <span class="px-2 py-1 bg-slate-800 text-slate-300 rounded text-[10px] font-medium">Assembly</span>
-                        <span class="px-2 py-1 bg-slate-800 text-slate-300 rounded text-[10px] font-medium">Installations</span>
-                        <span class="px-2 py-1 bg-slate-800 text-slate-300 rounded text-[10px] font-medium">Framing</span>
-                    </div>
-                </div>
-
-                <!-- Hardware & IT Tech -->
-                <div class="skill-card tech practical bg-slate-900 border border-slate-800 rounded-2xl p-5 hover:border-slate-700 transition">
-                    <div class="flex items-center gap-3 mb-3">
-                        <div class="p-2.5 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-                            <i data-lucide="cpu" class="w-5 h-5"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-base">IT Systems & Hardware Setup</h3>
-                            <span class="text-xs text-slate-400">Digital / Technical</span>
-                        </div>
-                    </div>
-                    <p class="text-xs text-slate-300 leading-relaxed mb-4">
-                        Custom PC builds, home/office network setups, IoT smart system integration, and troubleshooting hardware issues.
-                    </p>
-                    <div class="flex flex-wrap gap-1.5">
-                        <span class="px-2 py-1 bg-slate-800 text-slate-300 rounded text-[10px] font-medium">Networking</span>
-                        <span class="px-2 py-1 bg-slate-800 text-slate-300 rounded text-[10px] font-medium">Smart Home</span>
-                        <span class="px-2 py-1 bg-slate-800 text-slate-300 rounded text-[10px] font-medium">PC Build</span>
-                        <span class="px-2 py-1 bg-slate-800 text-slate-300 rounded text-[10px] font-medium">Diagnostics</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Recent Projects Showcase -->
-        <section id="work" class="space-y-6">
-            <div>
-                <h2 class="text-2xl font-bold">Recent Deliverables</h2>
-                <p class="text-xs text-slate-400">A quick glimpse at diverse real-world solutions</p>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden group">
-                    <div class="h-32 bg-slate-800 relative flex items-center justify-center text-slate-600 font-bold">
-                        <i data-lucide="laptop" class="w-8 h-8 text-slate-500 group-hover:scale-110 transition"></i>
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] font-semibold text-brand-500 uppercase tracking-wider">Web & Automation</span>
-                        <h4 class="font-bold text-sm mt-1">E-Commerce Portal</h4>
-                        <p class="text-xs text-slate-400 mt-1">Built full site with inventory tracking & payment processing.</p>
-                    </div>
-                </div>
-
-                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden group">
-                    <div class="h-32 bg-slate-800 relative flex items-center justify-center text-slate-600 font-bold">
-                        <i data-lucide="hammer" class="w-8 h-8 text-slate-500 group-hover:scale-110 transition"></i>
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] font-semibold text-amber-500 uppercase tracking-wider">Carpentry & Build</span>
-                        <h4 class="font-bold text-sm mt-1">Custom Studio Desk</h4>
-                        <p class="text-xs text-slate-400 mt-1">Designed and crafted solid hardwood ergonomic desk.</p>
-                    </div>
-                </div>
-
-                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden group">
-                    <div class="h-32 bg-slate-800 relative flex items-center justify-center text-slate-600 font-bold">
-                        <i data-lucide="wifi" class="w-8 h-8 text-slate-500 group-hover:scale-110 transition"></i>
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] font-semibold text-blue-500 uppercase tracking-wider">Networking & IT</span>
-                        <h4 class="font-bold text-sm mt-1">Office Tech Setup</h4>
-                        <p class="text-xs text-slate-400 mt-1">Structured cabling, mesh WiFi network, and security servers.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Direct Contact Section -->
-        <section id="contact" class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-6">
-            <div class="text-center max-w-md mx-auto space-y-2">
-                <h2 class="text-2xl font-bold">Have a Challenge for Me?</h2>
-                <p class="text-xs text-slate-400">Whether it requires code, tools, design, or troubleshooting, reach out and let's get it done.</p>
-            </div>
-
-            <form onsubmit="handleContactSubmit(event)" class="space-y-4">
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-xs font-medium text-slate-300 mb-1">Your Name</label>
-                        <input type="text" required placeholder="John Doe" class="w-full bg-dark-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-brand-500">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-medium text-slate-300 mb-1">Email Address</label>
-                        <input type="email" required placeholder="john@example.com" class="w-full bg-dark-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-brand-500">
-                    </div>
-                </div>
-                <div>
-                    <label class="block text-xs font-medium text-slate-300 mb-1">Project Category</label>
-                    <select class="w-full bg-dark-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-slate-100 focus:outline-none focus:border-brand-500">
-                        <option>Web & Digital Development</option>
-                        <option>Design & Branding</option>
-                        <option>Carpentry / Fabrication</option>
-                        <option>IT & Network Setup</option>
-                        <option>Mixed / Hybrid Project</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="block text-xs font-medium text-slate-300 mb-1">Message / Details</label>
-                    <textarea rows="4" required placeholder="Describe what you need help with..." class="w-full bg-dark-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-brand-500"></textarea>
-                </div>
-                <button type="submit" class="w-full py-3 rounded-xl bg-brand-500 text-dark-950 font-bold text-sm shadow-lg shadow-brand-500/20 hover:bg-brand-600 transition flex items-center justify-center gap-2">
-                    <i data-lucide="send" class="w-4 h-4"></i> Send Message
-                </button>
-            </form>
-        </section>
-
-        <!-- Simple Footer -->
-        <footer class="text-center text-xs text-slate-500 py-4 border-t border-slate-900">
-            <p>© 2026 Alex Rivera. Multi-Disciplinary Solutions Provider.</p>
-        </footer>
-
-    </main>
-
-    <!-- Mobile Bottom Navigation Bar -->
-    <nav class="fixed bottom-0 left-0 right-0 z-50 bg-dark-900/90 backdrop-blur-md border-t border-slate-800 md:hidden">
-        <div class="grid grid-cols-3 text-center text-xs py-2">
-            <a href="#skills" class="flex flex-col items-center gap-1 text-slate-400 hover:text-brand-500">
-                <i data-lucide="grid" class="w-5 h-5"></i>
-                <span class="text-[10px]">Skills</span>
-            </a>
-            <a href="#work" class="flex flex-col items-center gap-1 text-slate-400 hover:text-brand-500">
-                <i data-lucide="folder-check" class="w-5 h-5"></i>
-                <span class="text-[10px]">Work</span>
-            </a>
-            <a href="#contact" class="flex flex-col items-center gap-1 text-slate-400 hover:text-brand-500">
-                <i data-lucide="message-square" class="w-5 h-5"></i>
-                <span class="text-[10px]">Contact</span>
-            </a>
         </div>
-    </nav>
+    </section>
 
-    <!-- JavaScript logic -->
-    <script>
-        // Initialize Lucide Icons
-        lucide.createIcons();
+    <!-- Quick Contact Form -->
+    <section class="bg-gray-800 p-5 rounded-lg space-y-4">
+        <h2 class="text-base font-bold">Get in Touch</h2>
+        <form action="#" method="POST" class="space-y-3">
+            <input type="text" placeholder="Your Name" required class="w-full p-2.5 rounded bg-gray-900 border border-gray-700 text-xs text-white focus:outline-none focus:border-emerald-500">
+            <input type="email" placeholder="Your Email" required class="w-full p-2.5 rounded bg-gray-900 border border-gray-700 text-xs text-white focus:outline-none focus:border-emerald-500">
+            <textarea rows="3" placeholder="What do you need built or fixed?" required class="w-full p-2.5 rounded bg-gray-900 border border-gray-700 text-xs text-white focus:outline-none focus:border-emerald-500"></textarea>
+            <button type="submit" class="w-full py-2.5 rounded bg-emerald-500 text-gray-950 font-bold text-xs hover:bg-emerald-400">Send Message</button>
+        </form>
+    </section>
 
-        // Skill filtering logic
-        function filterSkills(category) {
-            const buttons = document.querySelectorAll('.skill-btn');
-            const cards = document.querySelectorAll('.skill-card');
-
-            // Toggle active style on buttons
-            buttons.forEach(btn => {
-                btn.classList.remove('bg-brand-500', 'text-dark-950');
-                btn.classList.add('bg-slate-800', 'text-slate-300');
-            });
-
-            event.target.classList.remove('bg-slate-800', 'text-slate-300');
-            event.target.classList.add('bg-brand-500', 'text-dark-950');
-
-            // Show/Hide cards with simple transition effect
-            cards.forEach(card => {
-                if (category === 'all' || card.classList.contains(category)) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        }
-
-        // Simple Form Handler
-        function handleContactSubmit(event) {
-            event.preventDefault();
-            alert("Thanks for reaching out! Alex will get back to you within 24 hours.");
-            event.target.reset();
-        }
-    </script>
 </body>
 </html>
