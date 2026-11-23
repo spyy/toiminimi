@@ -1,30 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sami Pyy | Jack of All Trades</title>
+    <title>Sami Pyy | Monitoimimies</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans antialiased max-w-xl mx-auto px-4 py-8 pb-20">
+<body class="bg-gray-900 text-gray-100 font-sans antialiased max-w-xl mx-auto px-4 py-6 pb-20">
+
+    <!-- Language Switcher -->
+    <div class="flex justify-end mb-2">
+        <div class="inline-flex rounded-lg bg-gray-800 p-1 border border-gray-700">
+            <button id="btn-fi" onclick="setLanguage('fi')" class="px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-500 text-gray-950 transition">
+                FI
+            </button>
+            <button id="btn-en" onclick="setLanguage('en')" class="px-2.5 py-1 rounded-md text-xs font-bold text-gray-400 hover:text-white transition">
+                EN
+            </button>
+        </div>
+    </div>
 
     <!-- Header -->
     <header class="text-center space-y-4 mb-6">
         <!-- Enlarged Profile Image Container -->
-        <div class="relative w-44 h-44 mx-auto rounded-2xl overflow-hidden border-2 border-emerald-500 shadow-xl my-4">
-            <img src="https://placehold.co/600x600?text=Sami+Pyy+with+Car" alt="Sami Pyy" class="w-full h-full object-cover">
+        <div class="relative w-44 h-44 mx-auto rounded-2xl overflow-hidden border-2 border-emerald-500 shadow-xl my-2">
+            <img src="https://placehold.co/600x600?text=Sami+Pyy" alt="Sami Pyy" class="w-full h-full object-cover">
         </div>
         
         <div class="space-y-1">
             <h1 class="text-2xl font-bold">Sami Pyy</h1>
-            <p class="text-xs text-gray-400">Digital • Creative • Mechanical • IT</p>
-            <p class="text-xs text-emerald-400 font-medium">📍 Runkotie, 18120 Heinola, Finland</p>
+            <p id="subtitle" class="text-xs text-gray-400">Digitaaliset ratkaisut • Luova työ • Asennukset & Korjaukset • IT</p>
+            <p id="location" class="text-xs text-emerald-400 font-medium">📍 Runkotie, 18120 Heinola, Suomi</p>
         </div>
         
         <!-- Action Buttons in Header -->
         <div class="pt-2 flex flex-wrap justify-center gap-2">
             <a href="tel:+358403675010" class="inline-flex items-center justify-center gap-1.5 px-3.5 py-2.5 rounded-lg bg-emerald-500 text-gray-950 font-bold text-xs hover:bg-emerald-400 transition">
-                📞 Call
+                📞 <span id="btn-call-top">Soita</span>
             </a>
             <a href="https://wa.me/358403675010" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 px-3.5 py-2.5 rounded-lg bg-green-600 text-white font-bold text-xs hover:bg-green-500 transition">
                 💬 WhatsApp
@@ -37,47 +49,95 @@
 
     <!-- Introduction Section -->
     <section class="bg-gray-800/60 border border-gray-700/60 p-4 rounded-xl text-center mb-8">
-        <h2 class="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-2">About Me</h2>
-        <p class="text-xs text-gray-300 leading-relaxed">
-            Hi, I’m Sami—a versatile problem solver based in Heinola. From web development and tech setups to practical home repairs and custom craft, I bring hands-on expertise to tackle diverse projects with quality and efficiency.
+        <h2 id="about-title" class="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-2">Esittely</h2>
+        <p id="about-text" class="text-xs text-gray-300 leading-relaxed">
+            Moi! Olen Sami – monipuolinen ongelmanratkaisija Heinolasta. Hoidan ammattitaidolla ja tehokkaasti niin verkkosivut ja IT-asennukset kuin kodin pienet korjaukset, puutyöt ja monenlaiset käytännön projektit.
         </p>
     </section>
 
     <!-- Capabilities -->
-    <section class="space-y-4 mb-8">
-        <h2 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Services</h2>
+    <section class="space-y-4">
+        <h2 id="services-title" class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Palvelut</h2>
         <div class="grid grid-cols-1 gap-3">
             <div class="bg-gray-800 p-4 rounded-lg">
-                <h3 class="font-bold text-sm text-emerald-400">Digital & Code</h3>
-                <p class="text-xs text-gray-300 mt-1">Websites, app interfaces, custom scripts, automation.</p>
+                <h3 id="srv-1-title" class="font-bold text-sm text-emerald-400">Digipalvelut & Koodaus</h3>
+                <p id="srv-1-desc" class="text-xs text-gray-300 mt-1">Verkkosivut, käyttöliittymät, skriptit ja automaatiot.</p>
             </div>
             <div class="bg-gray-800 p-4 rounded-lg">
-                <h3 class="font-bold text-sm text-emerald-400">Design & Media</h3>
-                <p class="text-xs text-gray-300 mt-1">Branding, UI design, graphics, basic video editing.</p>
+                <h3 id="srv-2-title" class="font-bold text-sm text-emerald-400">Suunnittelu & Media</h3>
+                <p id="srv-2-desc" class="text-xs text-gray-300 mt-1">Brändäys, UI-suunnittelu, grafiikat ja videoeditointi.</p>
             </div>
             <div class="bg-gray-800 p-4 rounded-lg">
-                <h3 class="font-bold text-sm text-emerald-400">Trades & Assembly</h3>
-                <p class="text-xs text-gray-300 mt-1">Custom woodwork, repairs, installations, hardware builds.</p>
+                <h3 id="srv-3-title" class="font-bold text-sm text-emerald-400">Asennukset & Kunnostus</h3>
+                <p id="srv-3-desc" class="text-xs text-gray-300 mt-1">Puutyöt, korjaukset, laiteasennukset ja tietokoneiden kasaus.</p>
             </div>
         </div>
     </section>
 
-    <!-- Contact Box -->
-    <section class="bg-gray-800 p-5 rounded-lg text-center space-y-3">
-        <h2 class="text-base font-bold">Get in Touch</h2>
-        <p class="text-xs text-gray-300">Available for projects in Heinola & surrounding areas.</p>
-        <div class="space-y-2">
-            <a href="tel:+358403675010" class="block w-full py-3 rounded bg-emerald-500 text-gray-950 font-bold text-xs text-center hover:bg-emerald-400 transition">
-                📞 Direct Call: +358 40 367 5010
-            </a>
-            <a href="https://wa.me/358403675010" target="_blank" rel="noopener noreferrer" class="block w-full py-3 rounded bg-green-600 text-white font-bold text-xs text-center hover:bg-green-500 transition">
-                💬 Message on WhatsApp
-            </a>
-            <a href="https://www.linkedin.com/in/samipyy/" target="_blank" rel="noopener noreferrer" class="block w-full py-3 rounded bg-blue-600 text-white font-bold text-xs text-center hover:bg-blue-500 transition">
-                🔗 Connect on LinkedIn
-            </a>
-        </div>
-    </section>
+    <script>
+        const translations = {
+            fi: {
+                pageTitle: "Sami Pyy | Monitoimimies",
+                subtitle: "Digitaaliset ratkaisut • Luova työ • Asennukset & Korjaukset • IT",
+                location: "📍 Runkotie, 18120 Heinola, Suomi",
+                btnCallTop: "Soita",
+                aboutTitle: "Esittely",
+                aboutText: "Moi! Olen Sami – monipuolinen ongelmanratkaisija Heinolasta. Hoidan ammattitaidolla ja tehokkaasti niin verkkosivut ja IT-asennukset kuin kodin pienet korjaukset, puutyöt ja monenlaiset käytännön projektit.",
+                servicesTitle: "Palvelut",
+                srv1Title: "Digipalvelut & Koodaus",
+                srv1Desc: "Verkkosivut, käyttöliittymät, skriptit ja automaatiot.",
+                srv2Title: "Suunnittelu & Media",
+                srv2Desc: "Brändäys, UI-suunnittelu, grafiikat ja videoeditointi.",
+                srv3Title: "Asennukset & Kunnostus",
+                srv3Desc: "Puutyöt, korjaukset, laiteasennukset ja tietokoneiden kasaus."
+            },
+            en: {
+                pageTitle: "Sami Pyy | Jack of All Trades",
+                subtitle: "Digital • Creative • Mechanical • IT",
+                location: "📍 Runkotie, 18120 Heinola, Finland",
+                btnCallTop: "Call",
+                aboutTitle: "About Me",
+                aboutText: "Hi, I’m Sami—a versatile problem solver based in Heinola. From web development and tech setups to practical home repairs and custom craft, I bring hands-on expertise to tackle diverse projects with quality and efficiency.",
+                servicesTitle: "Services",
+                srv1Title: "Digital & Code",
+                srv1Desc: "Websites, app interfaces, custom scripts, automation.",
+                srv2Title: "Design & Media",
+                srv2Desc: "Branding, UI design, graphics, basic video editing.",
+                srv3Title: "Trades & Assembly",
+                srv3Desc: "Custom woodwork, repairs, installations, hardware builds."
+            }
+        };
+
+        function setLanguage(lang) {
+            document.documentElement.lang = lang;
+            document.title = translations[lang].pageTitle;
+
+            document.getElementById('subtitle').textContent = translations[lang].subtitle;
+            document.getElementById('location').textContent = translations[lang].location;
+            document.getElementById('btn-call-top').textContent = translations[lang].btnCallTop;
+            document.getElementById('about-title').textContent = translations[lang].aboutTitle;
+            document.getElementById('about-text').textContent = translations[lang].aboutText;
+            document.getElementById('services-title').textContent = translations[lang].servicesTitle;
+            document.getElementById('srv-1-title').textContent = translations[lang].srv1Title;
+            document.getElementById('srv-1-desc').textContent = translations[lang].srv1Desc;
+            document.getElementById('srv-2-title').textContent = translations[lang].srv2Title;
+            document.getElementById('srv-2-desc').textContent = translations[lang].srv2Desc;
+            document.getElementById('srv-3-title').textContent = translations[lang].srv3Title;
+            document.getElementById('srv-3-desc').textContent = translations[lang].srv3Desc;
+
+            // Update toggle button styles
+            const btnFi = document.getElementById('btn-fi');
+            const btnEn = document.getElementById('btn-en');
+
+            if (lang === 'fi') {
+                btnFi.className = "px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-500 text-gray-950 transition";
+                btnEn.className = "px-2.5 py-1 rounded-md text-xs font-bold text-gray-400 hover:text-white transition";
+            } else {
+                btnEn.className = "px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-500 text-gray-950 transition";
+                btnFi.className = "px-2.5 py-1 rounded-md text-xs font-bold text-gray-400 hover:text-white transition";
+            }
+        }
+    </script>
 
 </body>
 </html>
