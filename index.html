@@ -29,8 +29,8 @@
         
         <div class="space-y-1">
             <h1 class="text-2xl font-bold">Sami Pyy</h1>
-            <p id="subtitle" class="text-xs text-gray-400">Digitaaliset ratkaisut • Luova työ • Asennukset & Korjaukset • IT</p>
-            <p id="location" class="text-xs text-emerald-400 font-medium">📍 Runkotie, 18120 Heinola, Suomi</p>
+            <p id="subtitle" class="text-xs text-gray-400">Verkkosivut • Lumityöt  • Muut</p>
+            <p id="location" class="text-xs text-emerald-400 font-medium">📍 Runkotie 10, 18120 Heinola, Suomi</p>
         </div>
         
         <!-- Action Buttons in Header -->
@@ -51,25 +51,34 @@
     <section class="bg-gray-800/60 border border-gray-700/60 p-4 rounded-xl text-center mb-8">
         <h2 id="about-title" class="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-2">Esittely</h2>
         <p id="about-text" class="text-xs text-gray-300 leading-relaxed">
-            Moi! Olen Sami – monipuolinen ongelmanratkaisija Heinolasta. Hoidan ammattitaidolla ja tehokkaasti niin verkkosivut ja IT-asennukset kuin kodin pienet korjaukset, puutyöt ja monenlaiset käytännön projektit.
+            Hei! Olen Sami – yleismies Heinolasta. Hoidan niin verkkosivut ja lumityöt kuin kodin pienet korjaukset ja monenlaiset käytännön projektit.
         </p>
     </section>
 
-    <!-- Capabilities -->
+    <!-- Project History -->
     <section class="space-y-4">
-        <h2 id="services-title" class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Palvelut</h2>
+        <h2 id="projects-title" class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Projektihistoria</h2>
         <div class="grid grid-cols-1 gap-3">
             <div class="bg-gray-800 p-4 rounded-lg">
-                <h3 id="srv-1-title" class="font-bold text-sm text-emerald-400">Digipalvelut & Koodaus</h3>
-                <p id="srv-1-desc" class="text-xs text-gray-300 mt-1">Verkkosivut, käyttöliittymät, skriptit ja automaatiot.</p>
+                <div class="flex justify-between items-start gap-2">
+                    <h3 id="proj-1-title" class="font-bold text-sm text-emerald-400">Paikallisten yritysten verkkosivut</h3>
+                    <span id="proj-1-tag" class="text-[10px] text-gray-400 bg-gray-900 px-2 py-0.5 rounded whitespace-nowrap">Verkkosivut</span>
+                </div>
+                <p id="proj-1-desc" class="text-xs text-gray-300 mt-1">Mobiiliystävällisten verkkosivujen suunnittelu, toteutus ja hakukoneoptimointi.</p>
             </div>
             <div class="bg-gray-800 p-4 rounded-lg">
-                <h3 id="srv-2-title" class="font-bold text-sm text-emerald-400">Suunnittelu & Media</h3>
-                <p id="srv-2-desc" class="text-xs text-gray-300 mt-1">Brändäys, UI-suunnittelu, grafiikat ja videoeditointi.</p>
+                <div class="flex justify-between items-start gap-2">
+                    <h3 id="proj-2-title" class="font-bold text-sm text-emerald-400">Pihojen lumityöt & kausihuolto</h3>
+                    <span id="proj-2-tag" class="text-[10px] text-gray-400 bg-gray-900 px-2 py-0.5 rounded whitespace-nowrap">Ulkoalueet</span>
+                </div>
+                <p id="proj-2-desc" class="text-xs text-gray-300 mt-1">Omakotitalojen ja piha-alueiden lumenauraus, hiekoitus sekä pihan kunnossapito Heinolassa.</p>
             </div>
             <div class="bg-gray-800 p-4 rounded-lg">
-                <h3 id="srv-3-title" class="font-bold text-sm text-emerald-400">Asennukset & Kunnostus</h3>
-                <p id="srv-3-desc" class="text-xs text-gray-300 mt-1">Puutyöt, korjaukset, laiteasennukset ja tietokoneiden kasaus.</p>
+                <div class="flex justify-between items-start gap-2">
+                    <h3 id="proj-3-title" class="font-bold text-sm text-emerald-400">Kodin asennukset & pienkorjaukset</h3>
+                    <span id="proj-3-tag" class="text-[10px] text-gray-400 bg-gray-900 px-2 py-0.5 rounded whitespace-nowrap">Kunnossapito</span>
+                </div>
+                <p id="proj-3-desc" class="text-xs text-gray-300 mt-1">Kalusteiden kokoaminen, laiteasennukset, tietokoneiden käyttöönotot ja pienet puutyöt.</p>
             </div>
         </div>
     </section>
@@ -78,33 +87,39 @@
         const translations = {
             fi: {
                 pageTitle: "Sami Pyy | Monitoimimies",
-                subtitle: "Digitaaliset ratkaisut • Luova työ • Asennukset & Korjaukset • IT",
-                location: "📍 Runkotie, 18120 Heinola, Suomi",
+                subtitle: "Verkkosivut • Lumityöt  • Muut",
+                location: "📍 Runkotie 10, 18120 Heinola, Suomi",
                 btnCallTop: "Soita",
                 aboutTitle: "Esittely",
-                aboutText: "Moi! Olen Sami – monipuolinen ongelmanratkaisija Heinolasta. Hoidan ammattitaidolla ja tehokkaasti niin verkkosivut ja IT-asennukset kuin kodin pienet korjaukset, puutyöt ja monenlaiset käytännön projektit.",
-                servicesTitle: "Palvelut",
-                srv1Title: "Digipalvelut & Koodaus",
-                srv1Desc: "Verkkosivut, käyttöliittymät, skriptit ja automaatiot.",
-                srv2Title: "Suunnittelu & Media",
-                srv2Desc: "Brändäys, UI-suunnittelu, grafiikat ja videoeditointi.",
-                srv3Title: "Asennukset & Kunnostus",
-                srv3Desc: "Puutyöt, korjaukset, laiteasennukset ja tietokoneiden kasaus."
+                aboutText: "Hei! Olen Sami – yleismies Heinolasta. Hoidan niin verkkosivut ja lumityöt kuin kodin pienet korjaukset ja monenlaiset käytännön projektit.",
+                projectsTitle: "Projektihistoria",
+                proj1Title: "Paikallisten yritysten verkkosivut",
+                proj1Tag: "Verkkosivut",
+                proj1Desc: "Mobiiliystävällisten verkkosivujen suunnittelu, toteutus ja hakukoneoptimointi.",
+                proj2Title: "Pihojen lumityöt & kausihuolto",
+                proj2Tag: "Ulkoalueet",
+                proj2Desc: "Omakotitalojen ja piha-alueiden lumenauraus, hiekoitus sekä pihan kunnossapito Heinolassa.",
+                proj3Title: "Kodin asennukset & pienkorjaukset",
+                proj3Tag: "Kunnossapito",
+                proj3Desc: "Kalusteiden kokoaminen, laiteasennukset, tietokoneiden käyttöönotot ja pienet puutyöt."
             },
             en: {
                 pageTitle: "Sami Pyy | Jack of All Trades",
-                subtitle: "Digital • Creative • Mechanical • IT",
-                location: "📍 Runkotie, 18120 Heinola, Finland",
+                subtitle: "Websites • Snow Removal • Other",
+                location: "📍 Runkotie 10, 18120 Heinola, Finland",
                 btnCallTop: "Call",
                 aboutTitle: "About Me",
-                aboutText: "Hi, I’m Sami—a versatile problem solver based in Heinola. From web development and tech setups to practical home repairs and custom craft, I bring hands-on expertise to tackle diverse projects with quality and efficiency.",
-                servicesTitle: "Services",
-                srv1Title: "Digital & Code",
-                srv1Desc: "Websites, app interfaces, custom scripts, automation.",
-                srv2Title: "Design & Media",
-                srv2Desc: "Branding, UI design, graphics, basic video editing.",
-                srv3Title: "Trades & Assembly",
-                srv3Desc: "Custom woodwork, repairs, installations, hardware builds."
+                aboutText: "Hi! I’m Sami – a handyman from Heinola. I handle everything from websites and snow removal to small home repairs and all kinds of practical projects.",
+                projectsTitle: "Project History",
+                proj1Title: "Local Business Websites",
+                proj1Tag: "Web",
+                proj1Desc: "Design, development, and local SEO optimization for mobile-first websites.",
+                proj2Title: "Snow Removal & Yard Maintenance",
+                proj2Tag: "Outdoors",
+                proj2Desc: "Residential snow clearing, sanding, and seasonal property upkeep in Heinola.",
+                proj3Title: "Home Installations & Small Repairs",
+                proj3Tag: "Maintenance",
+                proj3Desc: "Furniture assembly, device setups, PC troubleshooting, and minor carpentry."
             }
         };
 
@@ -117,13 +132,16 @@
             document.getElementById('btn-call-top').textContent = translations[lang].btnCallTop;
             document.getElementById('about-title').textContent = translations[lang].aboutTitle;
             document.getElementById('about-text').textContent = translations[lang].aboutText;
-            document.getElementById('services-title').textContent = translations[lang].servicesTitle;
-            document.getElementById('srv-1-title').textContent = translations[lang].srv1Title;
-            document.getElementById('srv-1-desc').textContent = translations[lang].srv1Desc;
-            document.getElementById('srv-2-title').textContent = translations[lang].srv2Title;
-            document.getElementById('srv-2-desc').textContent = translations[lang].srv2Desc;
-            document.getElementById('srv-3-title').textContent = translations[lang].srv3Title;
-            document.getElementById('srv-3-desc').textContent = translations[lang].srv3Desc;
+            document.getElementById('projects-title').textContent = translations[lang].projectsTitle;
+            document.getElementById('proj-1-title').textContent = translations[lang].proj1Title;
+            document.getElementById('proj-1-tag').textContent = translations[lang].proj1Tag;
+            document.getElementById('proj-1-desc').textContent = translations[lang].proj1Desc;
+            document.getElementById('proj-2-title').textContent = translations[lang].proj2Title;
+            document.getElementById('proj-2-tag').textContent = translations[lang].proj2Tag;
+            document.getElementById('proj-2-desc').textContent = translations[lang].proj2Desc;
+            document.getElementById('proj-3-title').textContent = translations[lang].proj3Title;
+            document.getElementById('proj-3-tag').textContent = translations[lang].proj3Tag;
+            document.getElementById('proj-3-desc').textContent = translations[lang].proj3Desc;
 
             // Update toggle button styles
             const btnFi = document.getElementById('btn-fi');
