@@ -3,18 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sami Pyy | Monitoimimies</title>
-    <meta name="description" content="Sami Pyy – monitoimimies Heinolasta. Verkkosivut, käsilumityöt, kodin pienet korjaukset ja käytännön projektit.">
+    <title>Sami Pyy | Monitoimimies Heinola – Verkkosivut, Lumityöt & Pienkorjaukset</title>
+    <meta name="description" content="Sami Pyy – monitoimimies ja yleismies Heinolassa. Paikalliset verkkosivut, pihan käsilumityöt, hiekoitus, kodin pienkorjaukset ja laiteasennukset. Ota yhteyttä: 040 367 5010.">
+    <meta name="keywords" content="Sami Pyy, monitoimimies Heinola, yleismies Heinola, lumityöt Heinola, käsilumityöt Heinola, verkkosivut Heinola, kodin pienkorjaukset Heinola, kausihuolto Heinola">
+    <meta name="author" content="Sami Pyy">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <meta name="theme-color" content="#071324">
+
+    <!-- Geo Tags for Local Google Search -->
+    <meta name="geo.region" content="FI-16">
+    <meta name="geo.placename" content="Heinola">
+    <meta name="geo.position" content="61.2028;26.0322">
+    <meta name="ICBM" content="61.2028, 26.0322">
+
+    <!-- Canonical & Language Alternates -->
     <link rel="canonical" href="https://spyy.github.io/toiminimi/">
+    <link rel="alternate" hreflang="fi" href="https://spyy.github.io/toiminimi/">
+    <link rel="alternate" hreflang="en" href="https://spyy.github.io/toiminimi/">
+    <link rel="alternate" hreflang="x-default" href="https://spyy.github.io/toiminimi/">
 
     <!-- Open Graph / Social Sharing Metadata -->
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Sami Pyy">
     <meta property="og:url" content="https://spyy.github.io/toiminimi/">
-    <meta property="og:title" content="Sami Pyy | Monitoimimies">
+    <meta property="og:title" content="Sami Pyy | Monitoimimies Heinola – Verkkosivut, Lumityöt & Pienkorjaukset">
     <meta property="og:description" content="Hei! Olen Sami – monitoimimies Heinolasta. Hoidan niin verkkosivut ja lumityöt kuin kodin pienet korjaukset ja monenlaiset käytännön projektit.">
     <meta property="og:image" content="https://spyy.github.io/toiminimi/assets/spyy.jpeg">
+    <meta property="og:image:alt" content="Sami Pyy – Monitoimimies Heinolasta">
     <meta property="og:locale" content="fi_FI">
     <meta property="og:locale:alternate" content="en_US">
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sami Pyy | Monitoimimies Heinola">
+    <meta name="twitter:description" content="Verkkosivut, käsilumityöt, kodin pienet korjaukset ja käytännön projektit Heinolassa.">
+    <meta name="twitter:image" content="https://spyy.github.io/toiminimi/assets/spyy.jpeg">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -92,24 +115,103 @@
         }
     </style>
 
-    <!-- Structured Data (LocalBusiness) -->
+    <!-- Structured Data (LocalBusiness + Services + FAQPage for Google Rich Results) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Sami Pyy",
-      "image": "https://spyy.github.io/toiminimi/assets/spyy.jpeg",
-      "url": "https://spyy.github.io/toiminimi/",
-      "telephone": "+358403675010",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Runkotie 10",
-        "postalCode": "18120",
-        "addressLocality": "Heinola",
-        "addressCountry": "FI"
-      },
-      "sameAs": [
-        "https://www.linkedin.com/in/samipyy/"
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://spyy.github.io/toiminimi/#website",
+          "url": "https://spyy.github.io/toiminimi/",
+          "name": "Sami Pyy | Monitoimimies Heinola",
+          "inLanguage": ["fi", "en"]
+        },
+        {
+          "@type": ["LocalBusiness", "ProfessionalService"],
+          "@id": "https://spyy.github.io/toiminimi/#business",
+          "name": "Sami Pyy",
+          "alternateName": "Sami Pyy – Monitoimimies Heinola",
+          "description": "Monitoimimies Heinolasta. Verkkosivut paikallisille yrityksille, pihojen käsilumityöt ja hiekoitus, sekä kodin pienkorjaukset ja laiteasennukset.",
+          "image": "https://spyy.github.io/toiminimi/assets/spyy.jpeg",
+          "url": "https://spyy.github.io/toiminimi/",
+          "telephone": "+358403675010",
+          "email": "sami.pyy@gmail.com",
+          "priceRange": "€€",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Runkotie 10",
+            "postalCode": "18120",
+            "addressLocality": "Heinola",
+            "addressRegion": "Päijät-Häme",
+            "addressCountry": "FI"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 61.2028,
+            "longitude": 26.0322
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Heinola"
+          },
+          "knowsLanguage": ["fi", "en"],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Palvelut Heinolassa",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Paikallisten yritysten verkkosivut",
+                  "description": "Mobiiliystävällisten verkkosivujen suunnittelu, toteutus ja hakukoneoptimointi."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Pihojen lumityöt & kausihuolto",
+                  "description": "Omakotitalojen ja piha-alueiden käsilumityöt, hiekoitus sekä pihan kunnossapito Heinolassa."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Kodin asennukset & pienkorjaukset",
+                  "description": "Kalusteiden kokoaminen, laiteasennukset, tietokoneiden käyttöönotot ja pienet puutyöt."
+                }
+              }
+            ]
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/samipyy/"
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://spyy.github.io/toiminimi/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Millä alueella Sami Pyy tekee lumitöitä ja kodin pienkorjauksia?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Palvelen Heinolan alueella (mm. Runkotie ja lähialueet). Verkkosivuprojektit onnistuvat sekä paikan päällä Heinolassa että etänä koko Suomeen."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Miten voin tilata palvelun tai pyytää tarjouksen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Voit soittaa suoraan numeroon +358 40 367 5010 tai lähettää viestin WhatsAppilla."
+              }
+            }
+          ]
+        }
       ]
     }
     </script>
@@ -117,49 +219,49 @@
 <body class="text-slate-100 antialiased max-w-xl mx-auto px-4 py-6 pb-20">
 
     <!-- Subtle Winter Snowflakes -->
-    <div class="snowflake text-xs" style="left: 8%; animation-duration: 14s; animation-delay: -2s;">❄</div>
-    <div class="snowflake text-sm" style="left: 22%; animation-duration: 18s; animation-delay: -7s;">❅</div>
-    <div class="snowflake text-[10px]" style="left: 38%; animation-duration: 13s; animation-delay: -4s;">•</div>
-    <div class="snowflake text-xs" style="left: 56%; animation-duration: 19s; animation-delay: -11s;">❄</div>
-    <div class="snowflake text-sm" style="left: 73%; animation-duration: 15s; animation-delay: -5s;">❅</div>
-    <div class="snowflake text-xs" style="left: 88%; animation-duration: 17s; animation-delay: -9s;">❄</div>
+    <div class="snowflake text-xs" style="left: 8%; animation-duration: 14s; animation-delay: -2s;" aria-hidden="true">❄</div>
+    <div class="snowflake text-sm" style="left: 22%; animation-duration: 18s; animation-delay: -7s;" aria-hidden="true">❅</div>
+    <div class="snowflake text-[10px]" style="left: 38%; animation-duration: 13s; animation-delay: -4s;" aria-hidden="true">•</div>
+    <div class="snowflake text-xs" style="left: 56%; animation-duration: 19s; animation-delay: -11s;" aria-hidden="true">❄</div>
+    <div class="snowflake text-sm" style="left: 73%; animation-duration: 15s; animation-delay: -5s;" aria-hidden="true">❅</div>
+    <div class="snowflake text-xs" style="left: 88%; animation-duration: 17s; animation-delay: -9s;" aria-hidden="true">❄</div>
 
     <div class="relative z-10">
         <!-- Top Bar: Name (Left) & Language Switcher (Right) -->
-        <div class="flex items-center justify-between gap-2 mb-4">
+        <nav aria-label="Päävalikko" class="flex items-center justify-between gap-2 mb-4">
             <h1 class="text-xl font-extrabold tracking-tight text-white">Sami Pyy</h1>
-            <div class="inline-flex rounded-xl frost-pill p-1">
-                <button id="btn-fi" onclick="setLanguage('fi')" class="px-2.5 py-1 rounded-lg text-xs font-bold bg-sky-400 text-slate-950 transition">
+            <div class="inline-flex rounded-xl frost-pill p-1" role="group" aria-label="Kielivalinta">
+                <button id="btn-fi" onclick="setLanguage('fi')" aria-pressed="true" class="px-2.5 py-1 rounded-lg text-xs font-bold bg-sky-400 text-slate-950 transition">
                     FI
                 </button>
-                <button id="btn-en" onclick="setLanguage('en')" class="px-2.5 py-1 rounded-lg text-xs font-bold text-sky-100/70 hover:text-white transition">
+                <button id="btn-en" onclick="setLanguage('en')" aria-pressed="false" class="px-2.5 py-1 rounded-lg text-xs font-bold text-sky-100/70 hover:text-white transition">
                     EN
                 </button>
             </div>
-        </div>
+        </nav>
 
         <!-- Header -->
         <header class="text-center space-y-4 mb-6">
             <!-- Circular Profile Image Container -->
             <div class="relative w-44 h-44 mx-auto rounded-full overflow-hidden border-2 border-sky-300/60 shadow-xl shadow-sky-950/70 my-2">
-                <img src="assets/spyy.jpeg" alt="Sami Pyy" class="w-full h-full object-cover">
+                <img src="assets/spyy.jpeg" alt="Sami Pyy – Monitoimimies Heinolasta" width="176" height="176" fetchpriority="high" class="w-full h-full object-cover">
             </div>
             
             <div class="space-y-1">
                 <p id="subtitle" class="text-xs text-sky-200/80">Verkkosivut • Lumityöt • Jne.</p>
-                <p id="location" class="text-xs text-sky-300 font-semibold">📍 Runkotie 10, 18120 Heinola, Suomi</p>
+                <address id="location" class="not-italic text-xs text-sky-300 font-semibold">📍 Runkotie 10, 18120 Heinola, Suomi</address>
             </div>
             
             <!-- Action Buttons in Header -->
             <div class="pt-2 flex flex-wrap justify-center items-center gap-2">
-                <a href="tel:+358403675010" class="inline-flex items-center justify-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-sky-400 text-slate-950 font-bold text-xs hover:bg-sky-300 shadow-md shadow-sky-950/50 transition">
+                <a href="tel:+358403675010" aria-label="Soita Sami Pyylle numeroon 040 367 5010" class="inline-flex items-center justify-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-sky-400 text-slate-950 font-bold text-xs hover:bg-sky-300 shadow-md shadow-sky-950/50 transition">
                     📞 <span id="btn-call-top">Soita</span>
                 </a>
-                <a href="https://wa.me/358403675010" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="inline-flex items-center justify-center px-3 py-2 rounded-xl bg-white/95 hover:bg-white border border-sky-200/40 shadow-md shadow-sky-950/50 transition">
-                    <img src="assets/Digital_Inline_Green_RGB_2026.svg" alt="WhatsApp" class="h-5 w-auto">
+                <a href="https://wa.me/358403675010" target="_blank" rel="noopener noreferrer" aria-label="Ota yhteyttä WhatsAppilla" class="inline-flex items-center justify-center px-3 py-2 rounded-xl bg-white/95 hover:bg-white border border-sky-200/40 shadow-md shadow-sky-950/50 transition">
+                    <img src="assets/Digital_Inline_Green_RGB_2026.svg" alt="WhatsApp" width="84" height="20" class="h-5 w-auto">
                 </a>
-                <a href="https://www.linkedin.com/in/samipyy/" target="_blank" rel="noopener noreferrer" class="linkedin-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <a href="https://www.linkedin.com/in/samipyy/" target="_blank" rel="noopener noreferrer" aria-label="Sami Pyy LinkedIn-profiili" class="linkedin-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                         <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                     </svg>
                     <span>LinkedIn</span>
@@ -167,47 +269,50 @@
             </div>
         </header>
 
-        <!-- Introduction Section -->
-        <section class="frost-card p-4 rounded-2xl text-center mb-8">
-            <h2 id="about-title" class="text-xs font-bold text-sky-300 uppercase tracking-wider mb-2">Esittely</h2>
-            <p id="about-text" class="text-xs text-slate-200/90 leading-relaxed">
-                Hei! Olen Sami – monitoimimies Heinolasta. Hoidan niin verkkosivut ja lumityöt kuin kodin pienet korjaukset ja monenlaiset käytännön projektit.
-            </p>
-        </section>
+        <main>
+            <!-- Introduction Section -->
+            <section aria-labelledby="about-title" class="frost-card p-4 rounded-2xl text-center mb-8">
+                <h2 id="about-title" class="text-xs font-bold text-sky-300 uppercase tracking-wider mb-2">Esittely</h2>
+                <p id="about-text" class="text-xs text-slate-200/90 leading-relaxed">
+                    Hei! Olen Sami – monitoimimies Heinolasta. Hoidan niin verkkosivut ja lumityöt kuin kodin pienet korjaukset ja monenlaiset käytännön projektit.
+                </p>
+            </section>
 
-        <!-- Services -->
-        <section class="space-y-4">
-            <h2 id="projects-title" class="text-sm font-bold text-sky-200/80 uppercase tracking-wider">Palvelut</h2>
-            <div class="grid grid-cols-1 gap-3">
-                <div class="frost-card p-4 rounded-2xl">
-                    <div class="flex justify-between items-start gap-2">
-                        <h3 id="proj-1-title" class="font-bold text-sm text-sky-300">Paikallisten yritysten verkkosivut</h3>
-                        <span id="proj-1-tag" class="text-[10px] text-sky-100 frost-pill px-2 py-0.5 rounded-md whitespace-nowrap">Verkkosivut</span>
-                    </div>
-                    <p id="proj-1-desc" class="text-xs text-slate-200/85 mt-1.5">Mobiiliystävällisten verkkosivujen suunnittelu, toteutus ja hakukoneoptimointi.</p>
+            <!-- Services -->
+            <section aria-labelledby="projects-title" class="space-y-4">
+                <h2 id="projects-title" class="text-sm font-bold text-sky-200/80 uppercase tracking-wider">Palvelut</h2>
+                <div class="grid grid-cols-1 gap-3">
+                    <article class="frost-card p-4 rounded-2xl">
+                        <div class="flex justify-between items-start gap-2">
+                            <h3 id="proj-1-title" class="font-bold text-sm text-sky-300">Paikallisten yritysten verkkosivut</h3>
+                            <span id="proj-1-tag" class="text-[10px] text-sky-100 frost-pill px-2 py-0.5 rounded-md whitespace-nowrap">Verkkosivut</span>
+                        </div>
+                        <p id="proj-1-desc" class="text-xs text-slate-200/85 mt-1.5">Mobiiliystävällisten verkkosivujen suunnittelu, toteutus ja hakukoneoptimointi.</p>
+                    </article>
+                    <article class="frost-card p-4 rounded-2xl">
+                        <div class="flex justify-between items-start gap-2">
+                            <h3 id="proj-2-title" class="font-bold text-sm text-sky-300">Pihojen lumityöt & kausihuolto</h3>
+                            <span id="proj-2-tag" class="text-[10px] text-sky-100 frost-pill px-2 py-0.5 rounded-md whitespace-nowrap">Ulkoalueet</span>
+                        </div>
+                        <p id="proj-2-desc" class="text-xs text-slate-200/85 mt-1.5">Omakotitalojen ja piha-alueiden käsilumityöt, hiekoitus sekä pihan kunnossapito Heinolassa.</p>
+                    </article>
+                    <article class="frost-card p-4 rounded-2xl">
+                        <div class="flex justify-between items-start gap-2">
+                            <h3 id="proj-3-title" class="font-bold text-sm text-sky-300">Kodin asennukset & pienkorjaukset</h3>
+                            <span id="proj-3-tag" class="text-[10px] text-sky-100 frost-pill px-2 py-0.5 rounded-md whitespace-nowrap">Kunnossapito</span>
+                        </div>
+                        <p id="proj-3-desc" class="text-xs text-slate-200/85 mt-1.5">Kalusteiden kokoaminen, laiteasennukset, tietokoneiden käyttöönotot ja pienet puutyöt.</p>
+                    </article>
                 </div>
-                <div class="frost-card p-4 rounded-2xl">
-                    <div class="flex justify-between items-start gap-2">
-                        <h3 id="proj-2-title" class="font-bold text-sm text-sky-300">Pihojen lumityöt & kausihuolto</h3>
-                        <span id="proj-2-tag" class="text-[10px] text-sky-100 frost-pill px-2 py-0.5 rounded-md whitespace-nowrap">Ulkoalueet</span>
-                    </div>
-                    <p id="proj-2-desc" class="text-xs text-slate-200/85 mt-1.5">Omakotitalojen ja piha-alueiden käsilumityöt, hiekoitus sekä pihan kunnossapito Heinolassa.</p>
-                </div>
-                <div class="frost-card p-4 rounded-2xl">
-                    <div class="flex justify-between items-start gap-2">
-                        <h3 id="proj-3-title" class="font-bold text-sm text-sky-300">Kodin asennukset & pienkorjaukset</h3>
-                        <span id="proj-3-tag" class="text-[10px] text-sky-100 frost-pill px-2 py-0.5 rounded-md whitespace-nowrap">Kunnossapito</span>
-                    </div>
-                    <p id="proj-3-desc" class="text-xs text-slate-200/85 mt-1.5">Kalusteiden kokoaminen, laiteasennukset, tietokoneiden käyttöönotot ja pienet puutyöt.</p>
-                </div>
-            </div>
-        </section>
+            </section>
+        </main>
     </div>
 
     <script>
         const translations = {
             fi: {
-                pageTitle: "Sami Pyy | Monitoimimies",
+                pageTitle: "Sami Pyy | Monitoimimies Heinola – Verkkosivut, Lumityöt & Pienkorjaukset",
+                metaDesc: "Sami Pyy – monitoimimies ja yleismies Heinolassa. Paikalliset verkkosivut, pihan käsilumityöt, hiekoitus, kodin pienkorjaukset ja laiteasennukset. Ota yhteyttä: 040 367 5010.",
                 subtitle: "Verkkosivut • Lumityöt • Jne.",
                 location: "📍 Runkotie 10, 18120 Heinola, Suomi",
                 btnCallTop: "Soita",
@@ -225,7 +330,8 @@
                 proj3Desc: "Kalusteiden kokoaminen, laiteasennukset, tietokoneiden käyttöönotot ja pienet puutyöt."
             },
             en: {
-                pageTitle: "Sami Pyy | Jack of All Trades",
+                pageTitle: "Sami Pyy | Handyman & Web Developer in Heinola",
+                metaDesc: "Sami Pyy – handyman in Heinola, Finland. Local business websites, manual snow removal, sanding, small home repairs, and device installations.",
                 subtitle: "Websites • Snow Removal • Etc.",
                 location: "📍 Runkotie 10, 18120 Heinola, Finland",
                 btnCallTop: "Call",
@@ -247,6 +353,8 @@
         function setLanguage(lang) {
             document.documentElement.lang = lang;
             document.title = translations[lang].pageTitle;
+            const metaDescEl = document.querySelector('meta[name="description"]');
+            if (metaDescEl) metaDescEl.setAttribute('content', translations[lang].metaDesc);
 
             document.getElementById('subtitle').textContent = translations[lang].subtitle;
             document.getElementById('location').textContent = translations[lang].location;
@@ -270,9 +378,13 @@
             if (lang === 'fi') {
                 btnFi.className = "px-2.5 py-1 rounded-lg text-xs font-bold bg-sky-400 text-slate-950 transition";
                 btnEn.className = "px-2.5 py-1 rounded-lg text-xs font-bold text-sky-100/70 hover:text-white transition";
+                btnFi.setAttribute('aria-pressed', 'true');
+                btnEn.setAttribute('aria-pressed', 'false');
             } else {
                 btnEn.className = "px-2.5 py-1 rounded-lg text-xs font-bold bg-sky-400 text-slate-950 transition";
                 btnFi.className = "px-2.5 py-1 rounded-lg text-xs font-bold text-sky-100/70 hover:text-white transition";
+                btnEn.setAttribute('aria-pressed', 'true');
+                btnFi.setAttribute('aria-pressed', 'false');
             }
         }
     </script>
