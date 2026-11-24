@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://spyy.github.io/toiminimi/sitemap.xml
+Sitemap: https://spyy.online/sitemap.xml
